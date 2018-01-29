@@ -1,0 +1,31 @@
+{
+  "title": "changeTitle",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "length": {
+      "type": "number"
+    },
+    "command": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "text"]
+    }
+  },
+  "required": ["id", "title", "length", "command", "payload"]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "createFilm",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "length": {
+      "type": "number"
+    },
+    "command": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string"
+        }
+      },
+      "required": ["text"]
+    }
+  },
+  "required": ["id", "title", "length", "command", "payload"]
+}
